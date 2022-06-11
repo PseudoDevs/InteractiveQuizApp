@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".teacher_create_question">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/quizTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Quiz Title"
+                android:background="@drawable/login_button_rounded"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                tools:layout_editor_absoluteX="87dp"
+                tools:layout_editor_absoluteY="169dp" />
+
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Question"
+        android:inputType="textPassword"
+        android:background="@drawable/login_button_rounded"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="95dp" />
+
+    <EditText
+        android:id="@+id/answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Answer 1"
+        android:background="@drawable/login_button_rounded"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="169dp" />
+
+    <EditText
+        android:id="@+id/answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Answer 2"
+        android:background="@drawable/login_button_rounded"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <EditText
+        android:id="@+id/answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Answer 3"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/login_button_rounded"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <EditText
+        android:id="@+id/answer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Answer 4"
+        android:background="@drawable/login_button_rounded"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="415dp" />
+
+
+
+    <Switch
+        android:id="@+id/activateQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable / Disable the Quiz"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="618dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Subject" />
+
+    <Spinner
+        android:id="@+id/listOfSubjects"
+        android:layout_width="match_parent"
+        android:background="@drawable/normal_border"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:id="@+id/editTextDate3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Start Date"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editTextDate4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="End Date"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Add Another Question" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Submit Questions" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

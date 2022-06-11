@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/drawable/login_button_rounded.xml" value="0.5435" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/drawable/normal_border.xml" value="0.5435" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/drawable/radius.xml" value="0.5435" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/drawable/textfield_rounded.xml" value="0.5435" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.3534136546184739" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout-w936dp/activity_login.xml" value="0.4125" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout/activity_login.xml" value="0.55" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout/activity_main.xml" value="0.3115942028985507" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout/activity_quiz.xml" value="0.55" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout/activity_quizzes_list_all.xml" value="0.55" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout/activity_teacher_add_student_to_subject.xml" value="0.55" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout/activity_teacher_create_question.xml" value="0.55" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout/activity_teacher_dashboard.xml" value="0.55" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout/add_student_to_subject_custom_view.xml" value="0.55" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout/add_subject_popup.xml" value="0.55" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.55" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout/fragment_home.xml" value="0.3836050724637681" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout/fragment_notifications.xml" value="0.3953804347826087" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout/quiz_result_popup.xml" value="0.55" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout/teacher_add_question.xml" value="0.55" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/layout/teacher_dashboard.xml" value="0.55" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveAndroidApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.55" />
+        <entry key="..\:/Users/IamPseudoX/AndroidStudioProjects/InteractiveQuizApp/app/src/main/res/layout/activity_quizzes_list_all.xml" value="0.55" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
