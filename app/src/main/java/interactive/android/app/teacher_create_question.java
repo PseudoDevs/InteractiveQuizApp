@@ -2,7 +2,6 @@ package interactive.android.app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -11,7 +10,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.MultiAutoCompleteTextView;
 import android.widget.Spinner;
@@ -30,8 +28,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Calendar;
-
 import static android.R.layout.simple_spinner_item;
 
 import interactive.android.app.ui.AccountDetails;
@@ -39,10 +35,9 @@ import interactive.android.app.ui.AccountDetails;
 public class teacher_create_question extends AppCompatActivity {
 
     Button submit_question;
-    EditText quizTitleEdt,answer1Edt,answer2Edt,answer3Edt,answer4Edt,editTextDate3,editTextDate4,correct_answerEdt;;
+    EditText quizTitleEdt,answer1Edt,answer2Edt,answer3Edt,answer4Edt,editTextDate3,editTextDate4,correct_answerEdt, startDates, endDates;;
     MultiAutoCompleteTextView questionMACT;
     Spinner listOfSubjects;
-    DatePickerDialog picker;
 
 
     private ArrayList<SubjectModel> subjectModelArrayList;
@@ -63,6 +58,8 @@ public class teacher_create_question extends AppCompatActivity {
         editTextDate3 = findViewById(R.id.editTextDate3);
         editTextDate4 = findViewById(R.id.editTextDate4);
         correct_answerEdt =findViewById(R.id.correct_answer);
+        startDates = findViewById(R.id.startDate);
+        endDates = findViewById(R.id.endDate);
         retrieveJSON();
 
         submit_question.setOnClickListener(new View.OnClickListener() {
@@ -133,7 +130,7 @@ public class teacher_create_question extends AppCompatActivity {
             }
         });
 
-        editTextDate3.setOnClickListener(new View.OnClickListener() {
+        startDates.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final Calendar cldr = Calendar.getInstance();
@@ -145,14 +142,14 @@ public class teacher_create_question extends AppCompatActivity {
                         new DatePickerDialog.OnDateSetListener() {
                             @Override
                             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                                editTextDate3.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
+                                startDates.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
                             }
                         }, year, month, day);
                 picker.show();
             }
         });
 
-        editTextDate4.setOnClickListener(new View.OnClickListener() {
+        endDates.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final Calendar cldr = Calendar.getInstance();
@@ -164,7 +161,7 @@ public class teacher_create_question extends AppCompatActivity {
                         new DatePickerDialog.OnDateSetListener() {
                             @Override
                             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                                editTextDate4.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
+                                endDates.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
                             }
                         }, year, month, day);
                 picker.show();
