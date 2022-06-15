@@ -60,6 +60,7 @@
 
 
                     <com.google.android.material.button.MaterialButton
+                        android:id="@+id/create_quiz"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="CREATE QUIZ"/>
@@ -116,6 +117,7 @@
 
 
                     <com.google.android.material.button.MaterialButton
+                        android:id="@+id/add_student_to_subject"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="ADD STUDENT TO SUBJECT"/>
@@ -167,6 +169,7 @@
 
 
                     <com.google.android.material.button.MaterialButton
+                        android:id="@+id/add_new_subject"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="ADD NEW SUBJECT"/>
