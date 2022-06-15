@@ -1,34 +1,26 @@
 package interactive.android.app;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
+import android.app.DatePickerDialog;
+import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
-import android.util.Log;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.MultiAutoCompleteTextView;
 import android.widget.Spinner;
-import android.widget.Toast;
 
-import com.vishnusivadas.advanced_httpurlconnection.PutData;
+import androidx.appcompat.app.AppCompatActivity;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-
-import interactive.android.app.ui.AccountDetails;
+import java.util.Calendar;
 
 public class teacher_create_question extends AppCompatActivity {
     Button submit_question;
-    EditText quizTitleEdt,answer1Edt,answer2Edt,answer3Edt,answer4Edt;
+    EditText quizTitleEdt,answer1Edt,answer2Edt,answer3Edt,answer4Edt, startDates, endDates;
     MultiAutoCompleteTextView questionMACT;
     Spinner listOfSubjects;
+    DatePickerDialog picker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +33,14 @@ public class teacher_create_question extends AppCompatActivity {
                 answer3Edt= findViewById(R.id.answer3);
         answer4Edt = findViewById(R.id.answer4);
         questionMACT = findViewById(R.id.question);
+        startDates = (EditText) findViewById(R.id.startDate);
+        endDates = (EditText) findViewById(R.id.endDate);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.CUPCAKE) {
+            startDates.setInputType(InputType.TYPE_NULL);
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.CUPCAKE) {
+            endDates.setInputType(InputType.TYPE_NULL);
+        }
 //        listOfSubjects = findViewById(R.id.listOfSubjects);
 
 //        submit_question.setOnClickListener(new View.OnClickListener() {
@@ -100,5 +100,46 @@ public class teacher_create_question extends AppCompatActivity {
 //            }
 //            }
 //        });
+
+
+        startDates.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Calendar cldr = Calendar.getInstance();
+                int day = cldr.get(Calendar.DAY_OF_MONTH);
+                int month = cldr.get(Calendar.MONTH);
+                int year = cldr.get(Calendar.YEAR);
+                // date picker dialog
+                picker = new DatePickerDialog(teacher_create_question.this,
+                        new DatePickerDialog.OnDateSetListener() {
+                            @Override
+                            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                                startDates.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
+                            }
+                        }, year, month, day);
+                picker.show();
+            }
+        });
+
+        endDates.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Calendar cldr = Calendar.getInstance();
+                int day = cldr.get(Calendar.DAY_OF_MONTH);
+                int month = cldr.get(Calendar.MONTH);
+                int year = cldr.get(Calendar.YEAR);
+                // date picker dialog
+                picker = new DatePickerDialog(teacher_create_question.this,
+                        new DatePickerDialog.OnDateSetListener() {
+                            @Override
+                            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                                endDates.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
+                            }
+                        }, year, month, day);
+                picker.show();
+            }
+        });
+
     }
+
 }
