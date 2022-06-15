@@ -95,6 +95,18 @@
         tools:layout_editor_absoluteX="103dp"
         tools:layout_editor_absoluteY="415dp" />
 
+            <EditText
+                android:id="@+id/correct_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="A / B / C / D"
+                android:background="@drawable/login_button_rounded"
+                android:padding="10dp"
+                tools:layout_editor_absoluteX="103dp"
+                tools:layout_editor_absoluteY="415dp" />
+
 
 
     <Switch
